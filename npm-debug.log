@@ -1,0 +1,114 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/Cellar/node/6.7.0/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'publish',
+1 verbose cli   './' ]
+2 info using npm@3.10.7
+3 info using node@v6.7.0
+4 verbose publish [ './' ]
+5 silly cache add args [ './', null ]
+6 verbose cache add spec ./
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: './',
+7 silly cache add   scope: null,
+7 silly cache add   escapedName: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: './',
+7 silly cache add   spec: '/Users/saadixl/works/saadixl/react-clicktainer',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory /Users/saadixl/.npm/react-clicktainer/1.0.0/package.tgz not in flight; packing
+9 verbose correctMkdir /Users/saadixl/.npm correctMkdir not in flight; initializing
+10 info lifecycle react-clicktainer@1.0.0~prepublish: react-clicktainer@1.0.0
+11 silly lifecycle react-clicktainer@1.0.0~prepublish: no script for prepublish, continuing
+12 verbose tar pack [ '/Users/saadixl/.npm/react-clicktainer/1.0.0/package.tgz',
+12 verbose tar pack   '/Users/saadixl/works/saadixl/react-clicktainer' ]
+13 verbose tarball /Users/saadixl/.npm/react-clicktainer/1.0.0/package.tgz
+14 verbose folder /Users/saadixl/works/saadixl/react-clicktainer
+15 verbose addLocalTarball adding from inside cache /Users/saadixl/.npm/react-clicktainer/1.0.0/package.tgz
+16 verbose correctMkdir /Users/saadixl/.npm correctMkdir not in flight; initializing
+17 silly cache afterAdd react-clicktainer@1.0.0
+18 verbose afterAdd /Users/saadixl/.npm/react-clicktainer/1.0.0/package/package.json not in flight; writing
+19 verbose correctMkdir /Users/saadixl/.npm correctMkdir not in flight; initializing
+20 verbose afterAdd /Users/saadixl/.npm/react-clicktainer/1.0.0/package/package.json written
+21 silly publish { name: 'react-clicktainer',
+21 silly publish   version: '1.0.0',
+21 silly publish   description: '',
+21 silly publish   main: 'index.js',
+21 silly publish   scripts: { test: 'echo "Error: no test specified" && exit 1' },
+21 silly publish   repository:
+21 silly publish    { type: 'git',
+21 silly publish      url: 'git+https://github.com/saadixl/react-clicktainer.git' },
+21 silly publish   author: { name: 'Masudul Haque', email: 'saadixl@outlook.com' },
+21 silly publish   license: 'ISC',
+21 silly publish   bugs: { url: 'https://github.com/saadixl/react-clicktainer/issues' },
+21 silly publish   homepage: 'https://github.com/saadixl/react-clicktainer#readme',
+21 silly publish   dependencies: { react: '^15.3.2', 'react-dom': '^15.3.2' },
+21 silly publish   devDependencies:
+21 silly publish    { 'babel-cli': '^6.18.0',
+21 silly publish      'babel-preset-es2015': '^6.18.0',
+21 silly publish      'babel-preset-react': '^6.16.0',
+21 silly publish      'babel-preset-stage-0': '^6.16.0' },
+21 silly publish   gitHead: '7214c19a7eb00a67240d99a4905ae732cfef54a5',
+21 silly publish   readme: 'ERROR: No README data found!',
+21 silly publish   _id: 'react-clicktainer@1.0.0',
+21 silly publish   _shasum: '251d523e4cb55aae04d414d9e4db0d36b3df150b',
+21 silly publish   _from: '.' }
+22 verbose getPublishConfig undefined
+23 silly mapToRegistry name react-clicktainer
+24 silly mapToRegistry using default registry
+25 silly mapToRegistry registry https://registry.npmjs.org/
+26 silly mapToRegistry data Result {
+26 silly mapToRegistry   raw: 'react-clicktainer',
+26 silly mapToRegistry   scope: null,
+26 silly mapToRegistry   escapedName: 'react-clicktainer',
+26 silly mapToRegistry   name: 'react-clicktainer',
+26 silly mapToRegistry   rawSpec: '',
+26 silly mapToRegistry   spec: 'latest',
+26 silly mapToRegistry   type: 'tag' }
+27 silly mapToRegistry uri https://registry.npmjs.org/react-clicktainer
+28 verbose publish registryBase https://registry.npmjs.org/
+29 silly publish uploading /Users/saadixl/.npm/react-clicktainer/1.0.0/package.tgz
+30 verbose request uri https://registry.npmjs.org/react-clicktainer
+31 verbose request sending authorization for write operation
+32 info attempt registry request try #1 at 9:47:18 PM
+33 verbose request using bearer token for auth
+34 verbose request id 9174ebef064c7470
+35 http request PUT https://registry.npmjs.org/react-clicktainer
+36 http 403 https://registry.npmjs.org/react-clicktainer
+37 verbose headers { 'content-type': 'application/json',
+37 verbose headers   'cache-control': 'max-age=300',
+37 verbose headers   'content-length': '95',
+37 verbose headers   'accept-ranges': 'bytes',
+37 verbose headers   date: 'Tue, 08 Nov 2016 15:47:20 GMT',
+37 verbose headers   via: '1.1 varnish',
+37 verbose headers   connection: 'keep-alive',
+37 verbose headers   'x-served-by': 'cache-sin6920-SIN',
+37 verbose headers   'x-cache': 'MISS',
+37 verbose headers   'x-cache-hits': '0',
+37 verbose headers   'x-timer': 'S1478620039.385097,VS0,VE869',
+37 verbose headers   vary: 'Accept-Encoding' }
+38 verbose request invalidating /Users/saadixl/.npm/registry.npmjs.org/react-clicktainer on PUT
+39 error publish Failed PUT 403
+40 verbose stack Error: "You cannot publish over the previously published version 1.0.0." : react-clicktainer
+40 verbose stack     at makeError (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:264:12)
+40 verbose stack     at CachingRegistryClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:252:14)
+40 verbose stack     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:172:14)
+40 verbose stack     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:187:22)
+40 verbose stack     at emitTwo (events.js:106:13)
+40 verbose stack     at Request.emit (events.js:191:7)
+40 verbose stack     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1044:10)
+40 verbose stack     at emitOne (events.js:96:13)
+40 verbose stack     at Request.emit (events.js:188:7)
+40 verbose stack     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:965:12)
+41 verbose statusCode 403
+42 verbose pkgid react-clicktainer
+43 verbose cwd /Users/saadixl/works/saadixl/react-clicktainer
+44 error Darwin 16.1.0
+45 error argv "/usr/local/Cellar/node/6.7.0/bin/node" "/usr/local/bin/npm" "publish" "./"
+46 error node v6.7.0
+47 error npm  v3.10.7
+48 error code E403
+49 error "You cannot publish over the previously published version 1.0.0." : react-clicktainer
+50 error If you need help, you may report this error at:
+50 error     <https://github.com/npm/npm/issues>
+51 verbose exit [ 1, true ]
