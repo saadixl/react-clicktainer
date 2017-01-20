@@ -13,11 +13,10 @@ export default class Clicktainer extends Component {
 
 	handleClick(e) {
 		const inside = ReactDOM.findDOMNode(this.wrapper);
-		if (!inside.contains(e.target)) {
+		const btnR = ReactDOM.findDOMNode(this.props.btnRef);
+
+		if ((inside && !inside.contains(e.target)) && (btnR && !btnR.contains(e.target))) {
 			this.props.onOutsideClick();
-		}
-		else {
-			this.props.onInsideClick();
 		}
 	}
 
@@ -29,4 +28,3 @@ export default class Clicktainer extends Component {
 		);
 	}
 }
-
